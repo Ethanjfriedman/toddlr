@@ -1,0 +1,22 @@
+<form action="<%= users_path %>" method="post">
+  <h1>Sign up to Todd.lr</h1>
+
+  <input type="hidden"
+         name="authenticity_token"
+         value="<%= form_authenticity_token %>">
+  <input type="text"
+         name="user[username]"
+         placeholder="user name">
+  <input type="email"
+         name="user[email]"
+         placeholder="email">
+  <input type="password"
+         name="user[password]"
+         placeholder="password">
+  <input type="password"
+         name="user[password_confirmation]"
+         placeholder="confirm your password">
+  <input type="submit" value="Do it!">
+  <div class="text-center">- or -</div>
+  <a class="button" href="<%= new_session_path %>">Sign in, instead!</a>
+</form>

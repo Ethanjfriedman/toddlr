@@ -1,0 +1,5 @@
+<h1>Prattles for <%= @user.username %></h1>
+
+<% @user.prattles.each do |prattle| %>
+  <h3><%= prattle.content %></h3>
+<% end %>
